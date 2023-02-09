@@ -1,0 +1,182 @@
+
+<html lang="">
+<head>
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            height: 100vh;
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .heart {
+            width: 400px;
+            height: 360px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36px;
+            color: black;
+            text-align: center;
+            z-index: 2;
+        }
+
+
+        .message {
+            font-size: 36px;
+            font-weight: bold;
+            position: absolute;
+            color: red;
+            white-space: nowrap;
+            left: -100%;
+            animation: scrollingText 30s linear infinite ;
+        }
+
+        @keyframes scrollingText {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        #btno {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            transform: translate(140%, -45%);
+            z-index: 3;
+            background-color: black;
+            color: red;
+            font-size: 24px;
+            padding: 12px 48px;
+        }
+
+        #btnyes {
+            position: absolute;
+            top: 40%;
+            left: 45%;
+            transform: translate(-90%, -45%);
+            z-index: 3;
+            background-color: black;
+            color: red;
+            font-size: 24px;
+            padding: 12px 48px;
+        }
+
+        .arrow-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: center center;
+            animation: arrowAnimation 2s linear forwards;
+            z-index: 2;
+        }
+
+        @keyframes arrowAnimation {
+            0% {
+                top: 0;
+                left: 0;
+                transform: rotate(0deg);
+            }
+            100% {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+    </style>
+    <title></title>
+</head>
+<body>
+<div class="heart">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="#FF0000" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+    </svg>
+</div>
+<div class="arrow-container">
+    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="#FF0000" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+    </svg>
+</div>
+<p class="text">Ava will you be,<br>
+    my valentine<br>
+    please?</p>
+<button id="btnyes">Yes</button>
+<button id="btno">No</button>
+
+<script>
+    const text = document.querySelector(".text");
+    const btnyes = document.querySelector("#btnyes");
+    const btno = document.querySelector("#btno");
+
+    btnyes.addEventListener("click", function() {
+        text.innerHTML = "I love you<br>so much<br>koala";
+    });
+
+    btno.addEventListener("click", function() {
+        text.innerHTML = "Ligma Zig";
+    });
+</script>
+
+
+<div id="container">
+    <div class="message">Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will</div>
+    <div class="message">valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?flAva will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?</div>
+    <div class="message">be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my va</div>
+    <div class="message">Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will</div>
+    <div class="message">valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?flAva will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?</div>
+    <div class="message">be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my va</div>
+    <div class="message">Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will</div>
+    <div class="message">valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?flAva will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?</div>
+    <div class="message">be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my va</div>
+    <div class="message">Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will</div>
+    <div class="message">valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?flAva will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?</div>
+    <div class="message">be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my va</div>
+    <div class="message">Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will</div>
+    <div class="message">valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?flAva will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?</div>
+    <div class="message">be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my va</div>
+    <div class="message">Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will</div>
+    <div class="message">valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?flAva will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?</div>
+    <div class="message">valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?flAva will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?</div>
+    <div class="message">be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my va</div>
+    <div class="message">Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will</div>
+    <div class="message">valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?flAva will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?</div>
+    <div class="message">be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my va</div>
+    <div class="message">Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will you be my valentine?Ava will</div>
+
+</div>
+<script>
+    const messages = document.querySelectorAll(".message");
+    const container = document.querySelector("#container");
+    const width = container.offsetWidth;
+
+    for (let i = 0; i < messages.length; i++) {
+        messages[i].style.top = i * 40 + "px";
+        messages[i].style.width = width + "px";
+    }
+</script>
+</body>
+</html>
